@@ -19,8 +19,8 @@ mix.js('resources/js/app.js', 'public/js')
     .tailwind('./tailwind.config.js')
     .purgeCss();
 
-mix.copyDirectory('resources/assets/fonts', 'public/fonts');
 mix.copyDirectory('resources/assets/img', 'public/img');
+mix.copyDirectory('resources/assets/svg', 'public/svg');
 
 if (mix.inProduction()) {
     mix

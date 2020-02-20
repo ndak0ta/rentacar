@@ -19312,6 +19312,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+window.subeChecked = function () {
+  if (document.getElementById("subecheck").checked) document.getElementById('teslimsube').className = "";else document.getElementById('teslimsube').className = "hidden";
+};
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
