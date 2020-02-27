@@ -116,4 +116,6 @@
             </div>
         </div>
     </div>
+
+    <slideshow></slideshow>
 @endsection

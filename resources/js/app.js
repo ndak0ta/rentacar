@@ -1,5 +1,10 @@
 require('./bootstrap');
 
+Vue.component(
+    'slideshow',
+    require('./components/Slideshow.vue').default
+);
+
 // Navbar Toggle
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -30,3 +35,5 @@ window.subeChecked = function () {
     else
         document.getElementById('teslimsube').className = "hidden";
 };
+
+
