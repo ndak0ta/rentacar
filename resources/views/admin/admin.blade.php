@@ -12,11 +12,9 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="bg-gray-100 h-screen antialiased">
+<body class="">
 <div id="app" class="">
-    @include('layouts.nav')
 
-    @yield('content')
 </div>
 
 <!-- Scripts -->

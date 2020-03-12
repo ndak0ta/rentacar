@@ -1,39 +1,39 @@
+/**
+ * First we will load all of this project's JavaScript dependencies which
+ * includes Vue and other libraries. It is a great starting point when
+ * building robust, powerful web applications using Vue and Laravel.
+ */
+
 require('./bootstrap');
 
-Vue.component(
-    'slideshow',
-    require('./components/Slideshow.vue').default
-);
+// window.Vue = require('vue');
 
-// Navbar Toggle
-document.addEventListener('DOMContentLoaded', function () {
+/**
+ * The following block of code may be used to automatically register your
+ * Vue components. It will recursively scan this directory for the Vue
+ * components and automatically register them with their "basename".
+ *
+ * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
+ */
 
-    // Get all "navbar-burger" elements
-    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+// const files = require.context('./', true, /\.vue$/i);
+// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
+// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
-        // Add a click event on each of them
-        $navbarBurgers.forEach(function ($el) {
-            $el.addEventListener('click', function () {
+/**
+ * Next, we will create a fresh Vue application instance and attach it to
+ * the page. Then, you may begin adding components to this application
+ * or customize the JavaScript scaffolding to fit your unique needs.
+ */
 
-                // Get the "main-nav" element
-                var $target = document.getElementById('main-nav');
-
-                // Toggle the class on "main-nav"
-                $target.classList.toggle('hidden');
-
-            });
-        });
-    }
-});
+// const app = new Vue({
+//     el: '#app',
+// });
 
 window.subeChecked = function () {
     if (document.getElementById("subecheck").checked)
-        document.getElementById('teslimsube').className = "";
+        document.getElementById('teslimsube').removeAttribute('hidden');
     else
-        document.getElementById('teslimsube').className = "hidden";
+        document.getElementById('teslimsube').setAttribute('hidden', 'true');
 };
-
-

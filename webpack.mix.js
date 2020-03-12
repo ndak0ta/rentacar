@@ -1,8 +1,5 @@
 const mix = require('laravel-mix');
 
-require('laravel-mix-tailwind');
-require('laravel-mix-purgecss');
-
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -15,15 +12,8 @@ require('laravel-mix-purgecss');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css')
-    .tailwind('./tailwind.config.js')
-    .purgeCss();
+    .sass('resources/sass/app.scss', 'public/css')
+    .copyDirectory('resources/img', 'public/img')
+    .copyDirectory('resources/svg', 'public/svg')
+    .copy('node_modules/font-awesome/fonts', 'public/fonts');
 
-mix.copyDirectory('resources/assets/img', 'public/img');
-mix.copyDirectory('resources/assets/svg', 'public/svg');
-
-if (mix.inProduction()) {
-    mix
-        .version()
-        .purgeCss();
-}
