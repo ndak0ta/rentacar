@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/admin', function () {
+    return view('admin.admin');
+});
+
+Route::get('/admin/ofis-ekle', function () {
+    return view('admin.ofis-ekle');
+});

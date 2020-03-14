@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Ofisler extends Migration
+class CreateOfisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class Ofisler extends Migration
      */
     public function up()
     {
-        Schema::create('ofisler',function (Blueprint $table){
+        Schema::create('ofis', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('isim');
             $table->string('adres');
-            $table->string('telefon');
-            $table->timestamp();
+            $table->string('tel');
+            $table->string('email');
+            $table->timestamps();
         });
     }
 
@@ -29,6 +30,6 @@ class Ofisler extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ofisler');
+        Schema::dropIfExists('ofis');
     }
 }
