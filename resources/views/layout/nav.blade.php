@@ -20,10 +20,14 @@
                         <a class="dropdown-item" href="#">Yurtiçi Kampanyalar</a>
                         <a class="dropdown-item" href="#">Yurtdışı Kampanyalar</a>
                         <a class="dropdown-item" href="#">Tüm Kampanyalar</a>
+                        <a class="dropdown-item" href="#">Tüm Kampanyalar</a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Kurumsal Kiralama</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">İletişim</a>
                 </li>
             </ul>
         </div>
