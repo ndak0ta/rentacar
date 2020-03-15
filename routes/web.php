@@ -15,10 +15,10 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/admin', function () {
+Route::get('admin', function () {
     return view('admin.admin');
 });
 
-Route::get('/admin/ofis-ekle', function () {
-    return view('admin.ofis-ekle');
-});
+Route::get('admin/ofisler', 'OfisController@list');
+Route::get('admin/ofisler/ekle', 'OfisController@create');
+Route::post('admin/ofisler/ekle', 'OfisController@store');

@@ -16,6 +16,7 @@ class CreateOfisTable extends Migration
         Schema::create('ofis', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('isim');
+            $table->string('sehir');
             $table->string('adres');
             $table->string('tel');
             $table->string('email');

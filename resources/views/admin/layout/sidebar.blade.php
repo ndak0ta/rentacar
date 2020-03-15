@@ -2,11 +2,11 @@
     <div class="sidebar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="{{ url('/admin/ofis-ekle') }}" class="nav-link px-2">
+                <a href="{{ url('/admin/ofisler') }}" class="nav-link px-2">
                     <i class="material-icons icon">
-                        add
+                        location_on
                     </i>
-                    <span class="text">Ofis Ekle</span>
+                    <span class="text">Ofisler</span>
                 </a>
             </li>
             <li class="nav-item">
