@@ -20,6 +20,7 @@ class CreateOfisTable extends Migration
             $table->string('adres');
             $table->string('tel');
             $table->string('email');
+            $table->string('img');
             $table->timestamps();
         });
     }

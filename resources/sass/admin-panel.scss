@@ -21,7 +21,7 @@
 }
 
 $easeTime: 0.25s;
-$margin-top: 56px;
+$margin-top: 52px;
 $colors: (
     'mattBlackLight': '#303337',
     'mattBlackDark': '#212121',
@@ -44,8 +44,7 @@ $colors: (
 
 body {
     height: 1000px;
-    @extend .bg-mattBlackDark;
-    @extend .text-mattGray;
+    background-color: #f7fafc;
 }
 
 .wrapper {
@@ -95,7 +94,7 @@ body {
 
     .text {
         font-size: rem(14px);
-        @extend .text-mattGray;
+        color: white;
     }
 
     &:hover,

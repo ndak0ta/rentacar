@@ -11,14 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::view('/', 'home');
+Route::get('ofisler', 'OfisController@index');
 
-Route::get('admin', function () {
-    return view('admin.admin');
-});
+Route::view('admin', 'admin.admin');
 
-Route::get('admin/ofisler', 'OfisController@list');
+Route::get('admin/ofisler', 'OfisController@index');
 Route::get('admin/ofisler/ekle', 'OfisController@create');
 Route::post('admin/ofisler/ekle', 'OfisController@store');
+Route::get('admin/ofisler/{ofis}', 'OfisController@show');

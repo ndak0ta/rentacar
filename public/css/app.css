@@ -5152,12 +5152,12 @@ input[type=button].btn-block {
 
 @media (min-width: 576px) {
   .card-columns {
-      -moz-column-count: 3;
-      column-count: 3;
-      -moz-column-gap: 1.25rem;
-      column-gap: 1.25rem;
-      orphans: 1;
-      widows: 1;
+    -moz-column-count: 3;
+         column-count: 3;
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
   }
 
   .card-columns .card {
@@ -10987,42 +10987,42 @@ a.text-dark:focus {
 }
 
 .h-56 {
-    height: 14rem;
+  height: 14rem;
 }
 
 .h-64 {
-    height: 16rem;
+  height: 16rem;
 }
 
 .h-auto {
-    height: auto;
+  height: auto;
 }
 
 .h-px {
-    height: 1px;
+  height: 1px;
 }
 
 .h-full {
-    height: 100%;
+  height: 100%;
 }
 
 .h-screen {
-    height: 100vh;
+  height: 100vh;
 }
 
 .q-res-bg {
-    background-image: url("http://127.0.0.1:8000/img/road-9.jpg");
-    background-size: cover;
-    background-position: bottom;
+  background-image: url("http://127.0.0.1:8000/img/road-9.jpg");
+  background-size: cover;
+  background-position: bottom;
 }
 
 .nav-link:hover {
-    color: #1800ff !important;
+  color: #1800ff !important;
 }
 
 .carousel {
-    /* any dimensions are fine, it can be responsive with max-width */
-    max-height: 450px;
+  /* any dimensions are fine, it can be responsive with max-width */
+  max-height: 450px;
 }
 
 .carousel-inner {
@@ -11030,14 +11030,14 @@ a.text-dark:focus {
 }
 
 .carousel-item > img {
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: top !important;
-    object-position: top !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top !important;
+     object-position: top !important;
 }
 
 .red {
-    color: #1800ff !important;
+  color: #1800ff !important;
 }
 
 footer {
@@ -11075,7 +11075,7 @@ footer .footer-social ul li a {
 }
 
 footer .footer-social ul li a:hover {
-    color: #1800ff;
+  color: #1800ff;
 }
 
 footer .opening-time {
@@ -11092,11 +11092,11 @@ footer .opening-time li span {
 }
 
 footer .opening-time li span .fa-times {
-    color: #1800ff;
+  color: #1800ff;
 }
 
 footer .opening-time li strong {
-    color: #1800ff;
+  color: #1800ff;
 }
 
 footer .media-body a {
@@ -11104,7 +11104,7 @@ footer .media-body a {
 }
 
 footer .media-body a:hover {
-    color: #1800ff;
+  color: #1800ff;
 }
 
 footer .media-body span {

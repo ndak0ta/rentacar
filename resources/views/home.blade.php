@@ -1,5 +1,7 @@
 @extends('layout.app')
 
+@section('title', 'Rentcar | Anasasyfa')
+
 @section('content')
     <div class="q-res-bg bg-cover bg-center d-flex py-5">
         <form class="container border border-danger bg-danger rounded-lg my-5 pt-2 pb-2" method="">

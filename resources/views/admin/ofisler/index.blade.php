@@ -1,11 +1,13 @@
 @extends('admin.layout.app')
 
+@section('title', 'Ofisler')
+
 @section('content')
     <a href="{{ url('/admin/ofisler/ekle') }}">
-        <button class="btn btn-success m-3">Yeni Ofis Ekle</button>
+        <button class="btn btn-success my-3">Yeni Ofis Ekle</button>
     </a>
 
-    <table class="table text-white">
+    <table class="table table-striped">
         <thead>
         <tr>
             <th scope="col">#</th>
@@ -13,18 +15,16 @@
             <th scope="col">Şehir</th>
             <th scope="col">Tel</th>
             <th scope="col">E-mail</th>
-            <th scope="col"></th>
         </tr>
         </thead>
         <tbody>
         @foreach($ofisler as $ofis)
             <tr>
                 <th scope="row">{{ $ofis->id }}</th>
-                <td>{{ $ofis->isim }}</td>
+                <td><a href="{{ url('/admin/ofisler/' . $ofis->id) }}">{{ $ofis->isim }}</a></td>
                 <td>{{ $ofis->sehir }}</td>
                 <td>{{ $ofis->tel }}</td>
                 <td>{{ $ofis->email }}</td>
-                <td><button class="btn btn-primary">Düzenle</button><button class="btn btn-danger ml-3">Sil</button></td>
             </tr>
         @endforeach
         </tbody>

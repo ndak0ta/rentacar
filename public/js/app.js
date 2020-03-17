@@ -37080,29 +37080,28 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // window
 // });
 
 
-            window.subeChecked = function () {
-                if (document.getElementById("subecheck").checked) document.getElementById('teslimsube').removeAttribute('hidden'); else document.getElementById('teslimsube').setAttribute('hidden', 'true');
-            };
+window.subeChecked = function () {
+  if (document.getElementById("subecheck").checked) document.getElementById('teslimsube').removeAttribute('hidden');else document.getElementById('teslimsube').setAttribute('hidden', 'true');
+};
 
-            $(document).ready(function () {
-                $('.sideMenuToggler').on('click', function () {
-                    $('.wrapper').toggleClass('active');
-                });
+$(document).ready(function () {
+  $('.sideMenuToggler').on('click', function () {
+    $('.wrapper').toggleClass('active');
+  });
 
-                var adjustSidebar = function adjustSidebar() {
-                    $('.sidebar').slimScroll({
-                        height: document.documentElement.clientHeight - $('.navbar').outerHeight()
-                    });
-                };
+  var adjustSidebar = function adjustSidebar() {
+    $('.sidebar').slimScroll({
+      height: document.documentElement.clientHeight - $('.navbar').outerHeight()
+    });
+  };
 
-                adjustSidebar();
-                $(window).resize(function () {
-                    adjustSidebar();
-                });
-            });
+  adjustSidebar();
+  $(window).resize(function () {
+    adjustSidebar();
+  });
+});
 
-            /***/
-        }),
+/***/ }),
 
 /***/ "./resources/js/bootstrap.js":
 /*!***********************************!*\
@@ -37147,45 +37146,42 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     encrypted: true
 // });
 
-            /***/
-        }),
+/***/ }),
 
-        /***/ "./resources/sass/admin-panel.scss":
-        /*!*****************************************!*\
-          !*** ./resources/sass/admin-panel.scss ***!
-          \*****************************************/
-        /*! no static exports found */
-        /***/ (function (module, exports) {
+/***/ "./resources/sass/admin-panel.scss":
+/*!*****************************************!*\
+  !*** ./resources/sass/admin-panel.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
-            /***/
-        }),
+/***/ }),
 
-        /***/ "./resources/sass/app.scss":
-        /*!*********************************!*\
-          !*** ./resources/sass/app.scss ***!
-          \*********************************/
-        /*! no static exports found */
-        /***/ (function (module, exports) {
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
 /***/ 0:
-        /*!***********************************************************************************************!*\
-          !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/admin-panel.scss ***!
-          \***********************************************************************************************/
-        /*! no static exports found */
-/***/ (function (module, exports, __webpack_require__) {
+/*!***********************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/admin-panel.scss ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-            __webpack_require__(/*! /home/ndak0ta/PhpstormProjects/rentacar/resources/js/app.js */"./resources/js/app.js");
-            __webpack_require__(/*! /home/ndak0ta/PhpstormProjects/rentacar/resources/sass/app.scss */"./resources/sass/app.scss");
-            module.exports = __webpack_require__(/*! /home/ndak0ta/PhpstormProjects/rentacar/resources/sass/admin-panel.scss */"./resources/sass/admin-panel.scss");
+__webpack_require__(/*! /home/ndak0ta/PhpstormProjects/rentacar/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /home/ndak0ta/PhpstormProjects/rentacar/resources/sass/app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! /home/ndak0ta/PhpstormProjects/rentacar/resources/sass/admin-panel.scss */"./resources/sass/admin-panel.scss");
 
 
-            /***/
-        })
+/***/ })
 
 /******/ });

@@ -7,18 +7,24 @@ use Illuminate\Http\Request;
 
 class OfisController extends Controller
 {
-    public function list()
+    public function index(Request $request)
     {
-        $ofis = Ofis::all();
+        $ofisler = Ofis::all();
 
-        return view('admin/ofis', [
-            'ofisler' => $ofis,
-        ]);
+        if ($request->is('admin/ofisler')) {
+            return view('admin.ofisler.index', [
+                'ofisler' => $ofisler,
+            ]);
+        } else {
+            return view('ofisler', [
+                'ofisler' => $ofisler,
+            ]);
+        }
     }
 
     public function create()
     {
-        return view('admin/ofis-ekle');
+        return view('admin.ofisler.create');
     }
 
     public function store()
@@ -31,14 +37,15 @@ class OfisController extends Controller
             'email' => 'email',
         ]);
 
-        $ofis = new Ofis;
-        $ofis->isim = request('isim');
-        $ofis->email = request('email');
-        $ofis->tel = request('tel');
-        $ofis->sehir = request('sehir');
-        $ofis->adres = request('adres');
-        $ofis->save();
+        Ofis::create($data);
 
-        return redirect('admin/ofisler');
+        return redirect('admin/ofisler/index');
+    }
+
+    public function show(Ofis $ofis)
+    {
+//        $ofis = Ofis::where('id', $ofis)->firstOrFail(); Ofisi static olarak tanımladığımız için bu koda gerek kalmıyor
+
+        return view('admin.ofisler.show', compact('ofis'));
     }
 }

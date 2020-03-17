@@ -1,5 +1,7 @@
 @extends('admin.layout.app')
 
+@section('title', 'Ofis Ekle')
+
 @section('content')
     <form class="container text-white" method="POST">
         @if($errors->first('isim'))
@@ -110,7 +112,7 @@
             <label for="adres">Adres</label>
             <textarea class="form-control" name="adres" rows="3"></textarea>
         </div>
-
+        {{--    TODO resim ekleme    --}}
 
         <button type="submit" class="btn btn-primary">Kaydet</button>
         @csrf
