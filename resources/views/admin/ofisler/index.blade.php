@@ -3,7 +3,7 @@
 @section('title', 'Ofisler')
 
 @section('content')
-    <a href="{{ url('/admin/ofisler/ekle') }}">
+    <a href="{{ url('/admin/ofis/create') }}">
         <button class="btn btn-success my-3">Yeni Ofis Ekle</button>
     </a>
 
@@ -21,7 +21,7 @@
         @foreach($ofisler as $ofis)
             <tr>
                 <th scope="row">{{ $ofis->id }}</th>
-                <td><a href="{{ url('/admin/ofisler/' . $ofis->id) }}">{{ $ofis->isim }}</a></td>
+                <td><a href="{{ url('/admin/ofis/' . $ofis->id) }}">{{ $ofis->isim }}</a></td>
                 <td>{{ $ofis->sehir }}</td>
                 <td>{{ $ofis->tel }}</td>
                 <td>{{ $ofis->email }}</td>

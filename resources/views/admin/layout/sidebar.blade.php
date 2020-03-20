@@ -2,7 +2,7 @@
     <div class="sidebar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="{{ url('/admin/ofisler') }}" class="nav-link px-2">
+                <a href="{{ url('/admin/ofis') }}" class="nav-link px-2">
                     <i class="material-icons icon">
                         location_on
                     </i>
