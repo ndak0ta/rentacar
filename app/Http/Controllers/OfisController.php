@@ -53,7 +53,7 @@ class OfisController extends Controller
     public function update(Ofis $ofis)
     {
         $ofis->update($this->validateRequest());
-        return redirect('admin/ofis' . $ofis->id);
+        return redirect('admin/ofis/' . $ofis->id);
     }
 
     public function destroy(Ofis $ofis)

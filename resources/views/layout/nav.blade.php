@@ -12,6 +12,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('/ofisler') }}">Ofislerimiz<span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/arabalar') }}">Arabalarımız<span class="sr-only">(current)</span></a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Kampanyalar
@@ -22,9 +25,6 @@
                         <a class="dropdown-item" href="#">Tüm Kampanyalar</a>
                         <a class="dropdown-item" href="#">Tüm Kampanyalar</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Kurumsal Kiralama</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">İletişim</a>

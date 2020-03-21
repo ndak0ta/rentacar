@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOfisTable extends Migration
+class CreateArabasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,14 @@ class CreateOfisTable extends Migration
      */
     public function up()
     {
-        Schema::create('ofis', function (Blueprint $table) {
+        Schema::create('arabas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('isim');
-            $table->string('sehir');
-            $table->string('adres');
-            $table->string('tel');
-            $table->string('email');
+            $table->string('marka');
+            $table->string('model');
+            $table->integer('motor_hacmi');
+            $table->string('koltuk_sayisi');
+            $table->string('yakit_turu');
+            $table->string('vites_turu');
 //            $table->string('img');
             $table->timestamps();
         });
@@ -32,6 +33,6 @@ class CreateOfisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ofis');
+        Schema::dropIfExists('arabas');
     }
 }

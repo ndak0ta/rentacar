@@ -13,15 +13,17 @@
 
 Route::view('/', 'home');
 Route::get('ofisler', 'OfisController@index');
+Route::get('arabalar', 'ArabaController@index');
 
 Route::view('admin', 'admin.admin');
 
-//Route::get('admin/ofisler', 'OfisController@index');
-//Route::get('admin/ofisler/ekle', 'OfisController@create');
-//Route::post('admin/ofisler/ekle', 'OfisController@store');
-//Route::get('admin/ofisler/{ofis}', 'OfisController@show');
-//Route::get('admin/ofisler/{ofis}/duzenle', 'OfisController@edit');
-//Route::patch('admin/ofisler/{ofis}', 'OfisController@update');
-//Route::delete('admin/ofisler/{ofis}', 'OfisController@destroy');
+//Route::get('admin/ofis', 'OfisController@index');
+//Route::get('admin/ofis/create', 'OfisController@create');
+//Route::post('admin/ofis/create', 'OfisController@store');
+//Route::get('admin/ofis/{ofis}', 'OfisController@show');
+//Route::get('admin/ofis/{ofis}/edit', 'OfisController@edit');
+//Route::patch('admin/ofis/{ofis}', 'OfisController@update');
+//Route::delete('admin/ofis/{ofis}', 'OfisController@destroy');
 
-Route::resource('admin/ofis', 'OfisController');
+Route::resource('admin/ofis', 'OfisController')->parameters(['ofis' => 'ofis']);// parametre kısmı api otomarik olarak {ofis} değişkeinin 's' harfini sildiği için tanımlandı
+Route::resource('admin/araba', 'ArabaController');

@@ -2,7 +2,7 @@
     <div class="sidebar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="{{ url('/admin/ofis') }}" class="nav-link px-2">
+                <a href="{{ url('admin/ofis') }}" class="nav-link px-2">
                     <i class="material-icons icon">
                         location_on
                     </i>
@@ -10,49 +10,11 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link px-2">
+                <a href="{{ url('admin/araba') }}" class="nav-link px-2">
                     <i class="material-icons icon">
-                        person
+                        directions_car
                     </i>
-                    <span class="text">User Profile</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link px-2">
-                    <i class="material-icons icon"> insert_chart </i
-                    ><span class="text">Charts</span></a
-                >
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link px-2">
-                    <i class="material-icons icon">
-                        settings
-                    </i>
-                    <span class="text">Settings</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link px-2">
-                    <i class="material-icons icon">
-                        pages
-                    </i>
-                    <span class="text">Pages</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link px-2">
-                    <i class="material-icons icon">
-                        computer
-                    </i>
-                    <span class="text">Demo</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link px-2 sideMenuToggler">
-                    <i class="material-icons icon expandView ">
-                        view_list
-                    </i>
-                    <span class="text">Resize</span>
+                    <span class="text">Arabalar</span>
                 </a>
             </li>
         </ul>
