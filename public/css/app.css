@@ -11021,8 +11021,8 @@ a.text-dark:focus {
 }
 
 .carousel {
-  /* any dimensions are fine, it can be responsive with max-width */
-  max-height: 450px;
+    /* any dimensions are fine, it can be responsive with max-width */
+    max-height: 400px;
 }
 
 .carousel-inner {
