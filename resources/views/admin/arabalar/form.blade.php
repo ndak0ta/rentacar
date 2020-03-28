@@ -13,7 +13,7 @@
 </div>
 <div class="form-group">
     <label for="tel">Motor Hacmi</label>
-    <input type="text" name="motor_hacmi" placeholder="1.4, 2.0 şeklinde girin" class="form-control" value="{{ old('motor_hacmi') ?? $araba->motor_hacmi }}">
+    <input type="text" name="motor_hacmi" placeholder="1400, 2000 şeklinde girin" class="form-control" value="{{ old('motor_hacmi') ?? $araba->motor_hacmi }}">
 </div>
 <div class="form-group">
     <label for="tel">Koltuk Sayısı</label>
